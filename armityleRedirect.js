@@ -1,6 +1,14 @@
-function armityleRedirect(newUrl) {
+function armityle_redirect(newUrl) {
 	var protocolEndPos = document.URL.indexOf('://');
-	var domainStartPos = protocolEndPos + 3;
+	
+	if (protocolEndPos === -1) {
+		newUrl = 'http://' + newUrl;
+		var domainStartPos = 7;
+		
+	} else {
+		var domainStartPos = protocolEndPos + 3;
+	}
+	
 	var filePathStartPos = document.URL.indexOf('/', domainStartPos);
 	
 	if (filePathStartPos === -1) {
@@ -11,23 +19,3 @@ function armityleRedirect(newUrl) {
 	
 	window.location.replace(redirectUrl);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
