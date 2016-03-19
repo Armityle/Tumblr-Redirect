@@ -1,0 +1,1 @@
+function armityleRedirect(e){var n=document.URL.indexOf("://"),t=n+3,i=document.URL.indexOf("/",t);if(-1===i)var c=e;else var c=e+document.URL.substring(i,document.URL.length);window.location.replace(c)}
