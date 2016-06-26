@@ -1,4 +1,4 @@
-function armityle_redirect(newUrl) {
+tumblr_redirect = function(newUrl) {
 	var protocolEndPos = document.URL.indexOf('://');
 	
 	if (protocolEndPos === -1) {

@@ -5,15 +5,15 @@ How to Use
 ```html
 <script src="http://thomasrichards.xyz/-jsdump/armityleRedirectMin.js"></script>
 ```
-* Either call the function `armityle_redirect` in the head to immediately redirect. Or attach it as an event handler to a button or something that resembles an anchor. Don't actually use an anchor tag because there are issues when it comes to people doing a ctrl+click.
+* Either call the function `tumblr_redirect` in the head to immediately redirect. Or attach it as an event handler to a button or something that resembles an anchor. Don't actually use an anchor tag because there are issues when it comes to people doing a ctrl+click.
 ```html
 <script>
-	armityle_redirect('http://new-url.tumblr.com');
+	tumblr_redirect('http://new-url.tumblr.com');
 </script>
 ```
 ```html
-<button onclick="armityle_redirect('http://new-url.tumblr.com')">Go to new blog</button>
+<button onclick="tumblr_redirect('http://new-url.tumblr.com')">Go to new blog</button>
 ```
 ```html
-<span onclick="armityle_redirect('http://new-url.tumblr.com')" style="cursor:pointer; text-decoration:underline;">Go to new blog</span>
+<span onclick="tumblr_redirect('http://new-url.tumblr.com')" style="cursor:pointer; text-decoration:underline;">Go to new blog</span>
 ```
